@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+    <title>Blog</title>
+    <link href="https://tricksurf.github.io/blog/feed.xml" rel="self" />
+    <link href="https://tricksurf.github.io/blog" />
+    <updated>2023-01-23T22:03:06-05:00</updated>
+    <author>
+        <name>Nik McPhail</name>
+    </author>
+    <id>https://tricksurf.github.io/blog</id>
+
+    <entry>
+        <title>Test</title>
+        <author>
+            <name>Nik McPhail</name>
+        </author>
+        <link href="https://tricksurf.github.io/blog/test.html"/>
+        <id>https://tricksurf.github.io/blog/test.html</id>
+
+        <updated>2023-01-23T22:03:06-05:00</updated>
+            <summary></summary>
+        <content></content>
+    </entry>
+</feed>

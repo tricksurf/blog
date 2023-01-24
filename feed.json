@@ -1,0 +1,25 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Blog",
+    "description": "",
+    "home_page_url": "https://tricksurf.github.io/blog",
+    "feed_url": "https://tricksurf.github.io/blog/feed.json",
+    "user_comment": "",
+    "author": {
+        "name": "Nik McPhail"
+    },
+    "items": [
+        {
+            "id": "https://tricksurf.github.io/blog/test.html",
+            "url": "https://tricksurf.github.io/blog/test.html",
+            "title": "Test",
+            "author": {
+                "name": "Nik McPhail"
+            },
+            "tags": [
+            ],
+            "date_published": "2023-01-23T22:03:06-05:00",
+            "date_modified": "2023-01-23T22:03:06-05:00"
+        }
+    ]
+}
