@@ -1,6 +1,6 @@
 {
     "version": "https://jsonfeed.org/version/1",
-    "title": "Blog",
+    "title": "Tricksurf Blog",
     "description": "",
     "home_page_url": "https://tricksurf.github.io/blog",
     "feed_url": "https://tricksurf.github.io/blog/feed.json",
@@ -10,16 +10,18 @@
     },
     "items": [
         {
-            "id": "https://tricksurf.github.io/blog/test.html",
-            "url": "https://tricksurf.github.io/blog/test.html",
-            "title": "Test",
+            "id": "https://tricksurf.github.io/blog/on-the-subject-of-tracerays.html",
+            "url": "https://tricksurf.github.io/blog/on-the-subject-of-tracerays.html",
+            "title": "On the subject of TraceRays...",
+            "summary": "TraceRays are a tool in Counter-Strike: Source (and other Source Engine games) where you are able to send out a ray, like ray tracing, from any point and any direction you desire. This ray then gives back information that can be used to retrieve where&hellip;",
+            "content_html": "<p>TraceRays are a tool in Counter-Strike: Source (and other Source Engine games) where you are able to send out a ray, like ray tracing, from any point and any direction you desire. This ray then gives back information that can be used to retrieve where it hits, if it hits an entity, and information from said entity. This blog aims to explain how we utilize TraceRay in ways the game doesn't intend.</p>\n<h2 class=\"align-left\"><span style=\"text-decoration: underline;\"><span style=\"color: #e03e2d; text-decoration: underline;\">Finding the function</span></span></h2>\n<p><span style=\"color: #000000;\">If we look through the leaked 2018 sdk, we can find TraceRay is a virtual function of the class IEngineTrace:</span></p>\n<blockquote>\n<div>abstract_class IEngineTrace</div>\n<div>{</div>\n<div>public:</div>\n<div>    virtual int     GetPointContents( const Vector &amp;vecAbsPosition, IHandleEntity** ppEntity = NULL ) = 0;</div>\n<div>   </div>\n<div>    virtual int     GetPointContents_Collideable( ICollideable *pCollide, const Vector &amp;vecAbsPosition ) = 0;</div>\n<div> </div>\n<div>    virtual void    ClipRayToEntity( const Ray_t &amp;ray, unsigned int fMask, IHandleEntity *pEnt, trace_t *pTrace ) = 0;</div>\n<div> </div>\n<div>    virtual void    ClipRayToCollideable( const Ray_t &amp;ray, unsigned int fMask, ICollideable *pCollide, trace_t *pTrace ) = 0;</div>\n<br>\n<div>    // A version that simply accepts a ray (can work as a traceline or tracehull)</div>\n<div>    <span style=\"color: #2dc26b;\"><span style=\"color: #236fa1;\">virtual void</span>    <span style=\"color: #fbeeb8;\">TraceRay</span><span style=\"color: #b96ad9;\">(</span> <span style=\"color: #236fa1;\">const</span> Ray_t <span style=\"color: #ecf0f1;\">&amp;<span style=\"color: #c2e0f4;\">ray</span>,</span> <span style=\"color: #236fa1;\">unsigned int</span> <span style=\"color: #c2e0f4;\">fMask</span><span style=\"color: #ecf0f1;\">,</span> ITraceFilter <span style=\"color: #ecf0f1;\">*</span><span style=\"color: #c2e0f4;\">pTraceFilter</span><span style=\"color: #ecf0f1;\">,</span> trace_t <span style=\"color: #ecf0f1;\">*</span><span style=\"color: #c2e0f4;\">pTrace</span> <span style=\"color: #b96ad9;\">)</span> <span style=\"color: #ecf0f1;\">=</span> <span style=\"color: #bfedd2;\">0</span><span style=\"color: #ecf0f1;\">;</span></span></div>\n</blockquote>\n<p> </p>\n<p> </p>",
             "author": {
                 "name": "Nik McPhail"
             },
             "tags": [
             ],
-            "date_published": "2023-01-23T22:03:06-05:00",
-            "date_modified": "2023-01-23T22:03:06-05:00"
+            "date_published": "2023-01-23T22:26:25-05:00",
+            "date_modified": "2023-01-23T22:26:25-05:00"
         }
     ]
 }
